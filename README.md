@@ -37,45 +37,50 @@ Optional future extensions:
    ```bash
    git clone https://github.com/yourusername/TelemetryDashboard.git
    cd TelemetryDashboard
-
+---
 Open in Qt Creator:
-Open TelemetryDashboard.pro or the .pro project file.
-
-Build and Run:
-
-Configure for your compiler (e.g., MinGW or MSVC).
-
-Build → Run.
-
-Using the App:
-
-Connect your telemetry simulator or real device to port 5000.
-
-Watch live charts and labels update.
-
-CSV is automatically logged to telemetry_log.csv.
-
-Export XML via the Export button.
+  - Open TelemetryDashboard.pro or the .pro project file.
+  - Build and Run:
+  - Configure for your compiler (e.g., MinGW or MSVC).
+  -  Build → Run.
+  - Using the App:
+  - Connect your telemetry simulator or real device to port 5000.
+  - Watch live charts and labels update.
+  - CSV is automatically logged to telemetry_log.csv.
+  - Export XML via the Export button.
+---
 
 File Structure
+```bash
 TelemetryDashboard/
 │
-├─ main.cpp
-├─ mainwindow.h
-├─ mainwindow.cpp
-├─ dataparser.h/.cpp
-├─ telemetryserver.h/.cpp
-├─ telemetry_dashboard.pro
-└─ resources/ (optional icons, UI resources)
+├─ TelemetrySimulator
+|   ├─.qtcreator
+|   ├─ TelemetrySimulator.pro
+|   └─main.cpp
+├─ TelemetryDashboard-1 
+|   ├─.qtcreator
+|   ├─TelemetryDashboard-1.pro
+|   ├─TelemetryDashboard-1_en_IN.ts
+|   ├─dataparser.cpp
+|   ├─dataparser.h
+|   ├─main.cpp
+|   ├─mainwindow.cpp
+|   ├─mainwindow.h
+|   ├─mainwindow.ui
+|   └─telemetryserver.cpp
+└─ README.md
+```
+##Output Demo 
+---
+![Alt text](https://github.com/soujanya-s-p/Telemetry-Dashboard/blob/main/Animation-1.gif)
+---
 Usage Example
 
-Start the Telemetry Simulator.
-
-Run the Dashboard.
-
-Observe live telemetry.
-
-Click Export XML to save the session.
+  - Start the Telemetry Simulator.
+  - Run the Dashboard.
+  - Observe live telemetry.
+  - Click Export XML to save the session.
 
 License
 
